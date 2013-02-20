@@ -6,10 +6,39 @@
 <link href='http://fonts.googleapis.com/css?family=Playball|Sanchez|Cherry+Swash' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
 <style type="text/css">
-
-
-
-
+html { font-size: 62.5%; }
+ 
+body {
+padding: 20px 0;
+font-family: 'Sanchez', Garamond, serif;
+font-size: 1.6rem;
+line-height: 133%;
+background: #add9e4; /* Old browsers */
+background: -moz-linear-gradient(top, #add9e4 0%, #d9edf2 60%, #f7fbfc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#add9e4), color-stop(60%,#d9edf2), color-stop(100%,#f7fbfc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* IE10+ */
+background: linear-gradient(to bottom, #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* W3C */
+}
+ 
+#wrapper {
+width: 70%;
+padding: 2rem;
+margin: 0 auto;
+background: #fff;
+border-radius: 8px;
+-webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+ 
+#review-wrapper {
+margin: 5rem 0;
+}
+ 
+.review  {
+margin: 4rem 0;
+}
 
 /* 320px styles here */
 
@@ -22,16 +51,128 @@
 @media only screen and (min-width:768px) {
 
 #wrapper {
-    width:768px; 
-	height:1023px;
- }
+width:768px; 
+height:1023px;
+}
+}
+
+h1 {
+font-family: 'Playball', Helvetica, arial;
+font-size: 8rem;
+line-height: 133%;
+text-align: center;
+border-bottom: 2px dotted #aaa;
+margin: 3rem 0;
+}
+ 
+h2 {
+font-family: 'Cherry Swash', Helvetica, arial;
+font-size: 3rem;
+margin-bottom: .5rem;
+}
+ 
+h3 {
+font-size: 1.5rem;
+letter-spacing: -0.1rem;
+text-transform: uppercase;
+}
+ 
+a {
+text-decoration: none;
+color: #8f62b9;
+}
+
+.header {
+margin: 4 rem;
+}
+ 
+.review {
+margin: 7rem 0;
+clear: both;
+}
+ 
+.p {
+font-size: 2rem;
+line-height: 133%;
+}
+ 
+.sidebar {
+float: right;
+width: 25%;
+background: #bce8dc;
+padding: 0 1.6rem;
+margin-left: 2rem;
+border-radius: 4px;
+font-size: 1.4rem;
+}
 
 /* styles */
-@media only screen and (max-width:320px) {
-.review {
-	 width:320px; 
+@media only screen and (max-width:650px) {
+.title {
+width:600px; 
 }
 }
+
+.sideabr p {
+;}
+ 
+blockquote {
+margin: 1rem 0;
+}
+ 
+.gallery {
+display: inline-block;
+background: #f0edeb;
+border: 1px dotted #999;
+padding: 1rem;
+}
+ 
+.gallery img {
+border: 1px solid #000;
+}
+ 
+.likes {
+float: right;
+width: 25%;
+}
+ 
+.likes a {
+font-family: Helvetica, arial, sans-serif;
+font-size: 1.2rem;
+text-transform: uppercase;
+letter-spacing: 0.1rem;
+display: inline-block;
+padding: 3px 6px;
+border-radius: 4px;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
+filter: dropshadow(color=#000, offx=1, offy=1);
+}
+ 
+.likes a span {
+font-size: 2rem;
+}
+ 
+.yay { background: #3a962a; }
+.yay.active, .yay:hover { background: #00752f; }
+.boo { background: #b93337; }
+.boo.active, .boo:hover { background: #8c070f; }
+ 
+.meta, small {
+color: #555;
+font-size: 1.4rem;
+}
+
+.site-footer {
+width: 100%;
+padding: 2rem;
+margin: 0 auto;
+margin-bottom:10px;
+/*-webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);*/
+padding: 1.5rem;
+color:#666;
+}
+
 
 </style>
 </head>
@@ -45,9 +186,8 @@
 <div id="review-wrapper">
 <div class="review">
 <div class="title">
-<h2>The Hobbit</h2>
 <h3>Not Midnight Movie Material</h3>
-
+<img src="file:///C|/Users/joshua.mahlum.IAM/Desktop/hobbits-hobbits-2869625-1024-768.jpg">
 </div>
  
 <p> <!--class="first">-->
@@ -142,7 +282,7 @@ haven't heard of them iphone 8-bit, narwhal sartorial qui consequat ad aliquip.
 Excepteur nesciunt four loko, ut banjo dreamcatcher YOLO deserunt VHS master cleanse  
 fashion axe. Reprehenderit velit pickled iphone, non 3 wolf moon scenester deserunt.
 </p>
-
+<!--</article>-->
 <div class="gallery">
 <img src="http://www.austinchronicle.com/binary/24f8/screens_feature-38215.jpeg" height="150" alt="Babycakes" />
 <img src="http://25.media.tumblr.com/tumblr_lig4qu7YQv1qbs0fao1_400.jpg" height="150" alt="The Professor Brothers" />
@@ -154,7 +294,7 @@ fashion axe. Reprehenderit velit pickled iphone, non 3 wolf moon scenester deser
 <a href="#" class="yay"><span>&#10025;</span> Love It</a>
 <a href="#" class="boo"><span>&#9760;</span> Hate It</a>
 </div>
- 
+
 <div class="meta">
 <p>
 Posted by: <strong>Roast-Beefy O'Weefy</strong> on January 24th, 2013.
